@@ -30,3 +30,7 @@ https://vikvm.github.io/DocSignContract/
 ![image](https://user-images.githubusercontent.com/60881781/228266743-6e565069-66a0-4846-95ad-ecdb5186e912.png)
 
 ### Документ подписан!
+
+## Установка и запуск проекта 
+npm install
+npm run start
