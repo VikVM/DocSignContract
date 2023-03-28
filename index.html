@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Подпись документа</title>
+</head>
+<body>
+  <h1>Подпись документа</h1>
+  <form action="">
+    <label for="document_input">Введите номер документа для подписи</label>
+    <input id="document_input" type="number" min="0" required> 
+    <button id="document_button" type="submit">Подписать</button>
+  </form>
+  <p class="sign-document"></p>
+
+  <h2>Список адресов, которые могут подписывать документы:</h2>
+
+  <ul class="address-list">
+
+  </ul>
+
+  <button id="get_whitelist" type="submit" >Получить список</button>
+
+
+
+  <form action="">
+    <label for="address_input">Добавить адрес в белый список</label>
+    <input id="address_input" type="text" required>
+    <button type="button" id="address_button" type="submit">Добавить</button>
+  </form>
+
+
+  <h2>Найти документ:</h2>
+  <form action="">
+    <label for="search_input">Введите номер документа</label>
+    <input id="search_input" type="number" min="0" required>
+    <button type="button" id="search_button" type="submit">Найти</button>
+  </form>
+
+  <div  class="document-info">
+
+  </div>
+
+
+  <script src="https://cdn.ethers.io/lib/ethers-5.4.umd.min.js"
+  type="application/javascript"></script>
+  <script src="script.js"></script>
+</body>
+</html>
